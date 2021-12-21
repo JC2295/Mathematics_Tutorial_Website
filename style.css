@@ -24,7 +24,8 @@ h1 > a{
     flex-direction: row;
     align-items: center;
     border: solid grey 2px;
-    padding: 1rem;
+    margin: 1rem;
+
 }
 
 #searchBox{
@@ -53,27 +54,49 @@ h1 > a{
     color: black;
 }
 
-a{
+nav > ul > li > a{
     text-decoration: none;
     color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: font-size 0.3s ease-in-out;
 }
 
-a:hover{
+nav > ul > li > a:hover{
+    font-size: 1.3rem;
+    font-weight: bold;
     color: purple;
+    text-transform: uppercase;
 }
+
+
 
 nav{
     background: cornflowerblue;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav > ul > li{
     list-style-type: none;
     display: inline;
-    padding: 2rem;
-    font-size: 1.2rem;
+    text-align: center;
+    padding: 0rem 2rem;
+    border-right: solid black 2px;
 }
 
 ul{
     text-align: center;
     padding: 1rem;
+}
+
+#home{
+    font-weight: bold;
+    padding-left: 0;
+}
+
+#contact{
+    border:0;
+    padding-right: 0;
 }
